@@ -52,9 +52,9 @@ export const refreshUser = createAsyncThunk(
     const state = thunkAPI.getState();
     const persistedToken = state.auth.token;
 
-    if (persistedToken === null) {
+    if (!persistedToken) {
       return thunkAPI.rejectWithValue(
-        'Oops! Something went wrong. Try again, maybe it will work!'
+        'You must register or log in with your account!'
       );
     }
     try {
