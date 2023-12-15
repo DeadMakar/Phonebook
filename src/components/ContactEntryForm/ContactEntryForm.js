@@ -48,7 +48,7 @@ export const ContactEntryForm = () => {
 already in contacts.`);
       return;
     }
-    dispatch(addContact(newContact));
+    dispatch(addContact({ name: newContact.name, number: newContact.phone }));
   };
 
   return (

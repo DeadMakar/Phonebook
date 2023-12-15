@@ -20,6 +20,12 @@ export const StyledContactItem = styled.li`
   border: 1px solid #ccc;
   margin-bottom: 20px;
   transition: background-color 0.3s ease-in-out;
+  background: rgba(103, 74, 74, 0.61);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+  border: 1px solid rgba(103, 74, 74, 0.33);
 
   &:hover {
     background-color: #f0f0f0;

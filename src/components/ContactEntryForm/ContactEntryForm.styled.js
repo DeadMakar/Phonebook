@@ -15,6 +15,12 @@ export const StyledForm = styled(Form)`
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  background: rgba(103, 74, 74, 0.61);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+  border: 1px solid rgba(103, 74, 74, 0.33);
 
   div {
     margin-bottom: 10px;
