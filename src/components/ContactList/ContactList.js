@@ -12,6 +12,7 @@ import {
   selectIsLoading,
   selectVisibleContacts,
 } from 'redux/contacts/selectors';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 export const ContactList = () => {
   const dispatch = useDispatch();
@@ -30,7 +31,7 @@ export const ContactList = () => {
           <StyledContactItem key={contact.id}>
             <ContactListItem contact={contact} />
             <StyledDeleteButton onClick={() => handleDelete(contact.id)}>
-              X
+              <DeleteIcon />
             </StyledDeleteButton>
           </StyledContactItem>
         ))}

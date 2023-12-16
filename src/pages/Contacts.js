@@ -5,6 +5,7 @@ import { ContactList } from 'components/ContactList/ContactList';
 import { ContactEntryForm } from 'components/ContactEntryForm/ContactEntryForm';
 import { fetchContacts } from 'redux/contacts/operations';
 import { selectIsLoading } from 'redux/contacts/selectors';
+import { SearchFilter } from 'components/SearchFilter/SearchFilter';
 
 export default function Contacts() {
   const dispatch = useDispatch();
@@ -21,6 +22,7 @@ export default function Contacts() {
       </Helmet>
       <ContactEntryForm />
       <div>{isLoading && 'Request in progress...'}</div>
+      <SearchFilter />
       <ContactList />
     </>
   );

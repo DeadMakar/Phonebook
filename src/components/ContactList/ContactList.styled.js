@@ -4,23 +4,22 @@ export const StyledContactList = styled.ul`
   list-style-type: none;
   padding: 0;
   margin: auto;
-  width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+  justify-content: space-around;
 `;
 
 export const StyledContactItem = styled.li`
-  flex: 0 1 calc(25% - 20px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 200px;
   padding: 10px;
   border: 1px solid #ccc;
-  margin-bottom: 20px;
   transition: background-color 0.3s ease-in-out;
-  background: rgba(103, 74, 74, 0.61);
+  background: rgba(30, 30, 30, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.6px);
@@ -32,17 +31,42 @@ export const StyledContactItem = styled.li`
   }
 `;
 
+export const StyledContactInfo = styled.div`
+  color: #fff;
+  text-align: center;
+
+  p {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  span {
+    font-size: 16px;
+  }
+`;
+
 export const StyledDeleteButton = styled.button`
-  background-color: #ff6347;
+  background-color: transparent;
   color: #fff;
   padding: 5px 10px;
   border: none;
   width: 30px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: background-color 0.3s ease-in-out;
+  align-self: center;
 
-  &:hover {
-    background-color: #d63431;
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 99, 71, 0.3);
+
+    &::before {
+      color: black;
+    }
+  }
+
+  &::before {
+    content: '\2716';
+    font-size: 20px;
   }
 `;

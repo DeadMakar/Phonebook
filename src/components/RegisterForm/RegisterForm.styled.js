@@ -1,7 +1,7 @@
-import { Button, Container, Link, TextField, Typography } from '@mui/material';
+import { Button, Container, TextField } from '@mui/material';
 import { styled } from '@mui/system';
 
-export const StyledLoginFormContainer = styled(Container)({
+export const StyledRegisterFormContainer = styled(Container)({
   backgroundColor: 'rgba(30, 30, 30, 0.8)',
   borderRadius: '16px',
   padding: '20px',
@@ -12,14 +12,20 @@ export const StyledLoginFormContainer = styled(Container)({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
+  width: '500px',
 });
 
-export const StyledForm = styled('form')({
+export const StyledRegisterForm = styled('form')({
   width: '100%',
   marginTop: '1rem',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
 });
 
-export const StyledTextField = styled(TextField)({
+export const StyledRegisterTextField = styled(TextField)({
+  margin: '0.5rem',
+  marginBottom: '20px',
   '& label': {
     color: 'white',
     fontSize: '16px',
@@ -35,18 +41,11 @@ export const StyledTextField = styled(TextField)({
   },
 });
 
-export const StyledButton = styled(Button)({
+export const StyledRegisterButton = styled(Button)({
+  width: '355px',
   background: '#d63431',
   color: '#fff',
   '&:hover': {
     background: 'green',
   },
-});
-
-export const StyledLink = styled(Link)({
-  color: '#fff',
-});
-
-export const StyledTypography = styled(Typography)({
-  color: '#fff',
 });

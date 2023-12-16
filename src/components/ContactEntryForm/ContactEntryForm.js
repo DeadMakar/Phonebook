@@ -53,7 +53,7 @@ already in contacts.`);
 
   return (
     <>
-      <Title>Phonebook</Title>
+      <Title>YOUR CONTACTS</Title>
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
