@@ -5,6 +5,7 @@ import {
   StyledRegisterForm,
   StyledRegisterFormContainer,
   StyledRegisterTextField,
+  StyledTypography,
 } from './RegisterForm.styled';
 
 export const RegisterForm = () => {
@@ -25,6 +26,9 @@ export const RegisterForm = () => {
 
   return (
     <StyledRegisterFormContainer>
+      <StyledTypography component="h1" variant="h5">
+        Please fill in all registration fields
+      </StyledTypography>
       <StyledRegisterForm onSubmit={handleSubmit} autoComplete="off">
         <StyledRegisterTextField
           label="Username"

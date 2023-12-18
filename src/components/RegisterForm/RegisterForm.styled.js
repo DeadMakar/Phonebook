@@ -1,4 +1,4 @@
-import { Button, Container, TextField } from '@mui/material';
+import { Button, Container, TextField, Typography } from '@mui/material';
 import { styled } from '@mui/system';
 
 export const StyledRegisterFormContainer = styled(Container)({
@@ -12,7 +12,8 @@ export const StyledRegisterFormContainer = styled(Container)({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  width: '500px',
+  width: '444px',
+  height: '589px',
 });
 
 export const StyledRegisterForm = styled('form')({
@@ -27,12 +28,10 @@ export const StyledRegisterTextField = styled(TextField)({
   margin: '0.5rem',
   marginBottom: '20px',
   '& label': {
-    color: 'white',
     fontSize: '16px',
     fontWeight: 'bold',
   },
   '& input': {
-    color: 'white',
     fontSize: '30px',
     backgroundColor: 'rgba(255, 255, 255, 0.3)',
     borderRadius: '8px',
@@ -48,4 +47,9 @@ export const StyledRegisterButton = styled(Button)({
   '&:hover': {
     background: 'green',
   },
+});
+
+export const StyledTypography = styled(Typography)({
+  color: '#fff',
+  marginTop: '84px',
 });

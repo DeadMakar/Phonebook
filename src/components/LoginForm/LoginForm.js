@@ -49,8 +49,8 @@ export const LoginForm = () => {
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOutlinedIcon />
+          <Avatar sx={{ m: 1, bgcolor: 'black' }}>
+            <LockOutlinedIcon sx={{ backgroundColor: 'black' }} />
           </Avatar>
           <StyledTypography component="h1" variant="h5">
             Sign in

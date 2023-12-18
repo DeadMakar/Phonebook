@@ -21,12 +21,10 @@ export const StyledForm = styled('form')({
 
 export const StyledTextField = styled(TextField)({
   '& label': {
-    color: 'white',
     fontSize: '16px',
     fontWeight: 'bold',
   },
   '& input': {
-    color: 'white',
     fontSize: '30px',
     backgroundColor: 'rgba(255, 255, 255, 0.3)',
     borderRadius: '8px',
