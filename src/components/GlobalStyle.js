@@ -3,7 +3,7 @@ import 'modern-normalize';
 
 export const GlobalStyle = createGlobalStyle`
   body {
-    background: url('https://oir.mobi/uploads/posts/2021-03/1616546229_23-p-chernii-fon-na-rabochii-stol-24.jpg') no-repeat center center fixed; 
+    background: url('https://oir.mobi/uploads/posts/2021-03/1616588909_47-p-fon-dlya-tovara-50.jpg') no-repeat center center fixed; 
     background-size: cover;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
